@@ -1,0 +1,20 @@
+.GeneratedMarquee {
+font-family:'Comic Sans MS';
+font-size:2em;
+line-height:1.3em;
+color:#996600;
+background-color:pink;
+padding:1.5em;
+}
+
+.bottom-left{
+    position: fixed;
+    left: 20px;
+    bottom:20px;
+}
+
+.bottom-right{
+    position: fixed;
+    right: 20px;
+    bottom:20px;
+}

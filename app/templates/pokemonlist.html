@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous" />
+<title class="display-4" style="color: gray; font-weight: bolder;">The Pokémon Character List</title>
+</head>  
+<body>
+<body style="background-color: pink;">
+
+{% include 'nav.html' %} 
+<div class="container mt-5 d-flex align-items-center justify-content-center">
+    <h1 class="display-4" style="color: gray; font-weight: bolder;">The Pokémon Character List</h1>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Pokémon Name</h2>
+
+        <ul>
+          <li>Bulbasaur<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png" alt="Bulbasaur-Image"></li>
+          <li>Ivysaur <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png" alt="Ivysaur-Image"></li>
+          <li>Venusaur<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png" alt="Venusaur-Image"></li>
+          <li>Charmander<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png" alt="Charmander-Image"></li>
+          <li>Charmeleon<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png" alt="Charmeleon-Image"></li>
+          <li>Charizard<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png" alt="Charizard-Image"></li>
+          <li>Squirtle<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png" alt="Squirtle-Image"></li>
+          <li>Wartortle<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png" alt="Wartortle-Image"></li>
+          <li>Blastoise<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png" alt="Blastoise-Image"></li>
+          <li>Caterpie<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png" alt="Caterpie-Image"></li>
+          <li>Metapod<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/11.png" alt="Metapod-Image"></li>
+          <li>Butterfree<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/12.png" alt="Butterfree-Image"></li>
+          <li>Beedrill<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png" alt="Beedrill-Image"></li>
+          <li>Weedle<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png" alt="Weedle-Image"></li>
+          <li>Kakuna<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/14.png" alt="Kakuna-Image"></li>
+          <li>Pidgey<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png" alt="Pidgey-Image"></li>
+          <li>Pidgeotto<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/17.png" alt="Pidgeotto-Image"></li>
+          <li>Pidgeot<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/18.png" alt="Pidgeo-Image"></li>
+          <li>Rattata<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png" alt="Rattata-Image"></li>
+          <li>Raticate<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/20.png" alt="Raticate-Image"></li>
+        </ul>
+      </div>
+    </div>
+      {% for move in pokemon_list %}
+            <li>{{ move.move.name }}</li>
+                {% endfor %} 
+
+<footer class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+    <a class="navbar-brand black-50" href="/"></a>
+    
+    </div>
+</footer>
+</body>
+</html>
